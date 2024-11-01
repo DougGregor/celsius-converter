@@ -103,11 +103,7 @@ public class CelsiusConverterGUI extends javax.swing.JFrame {
         pack();
     }
 
-    void convertButtonActionPerformed(java.awt.event.ActionEvent evt) {
-      int tempFahr = (int)((Double.parseDouble(tempTextField.getText()))
-          * 1.8 + 32);
-      fahrenheitLabel.setText(tempFahr + " Fahrenheit");
-    }
+    native void convertButtonActionPerformed(java.awt.event.ActionEvent evt);
 
     /**
      * @param args the command line arguments
